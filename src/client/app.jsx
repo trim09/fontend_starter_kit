@@ -32,9 +32,9 @@ const App = () =>
       <Route exact path={HOME_PAGE_ROUTE} render={() => <HomePage />} />
       <Route path={HELLO_PAGE_ROUTE} render={() => <HelloPage />} />
       <Route path={HELLO_ASYNC_PAGE_ROUTE} render={() => <HelloAsyncPage />} />
-		<Route path={REDIR_PAGE_ROUTE} onEnter={() => 
-			<div>heloooo</div> window.location.href = '/atlas'}>
-		</Route>
+		{/*<Route path={REDIR_PAGE_ROUTE} onEnter={() => */}
+			{/*<div>heloooo</div> window.location.href = '/atlas'}>*/}
+		{/*</Route>*/}
       <Route component={NotFoundPage} />
     </Switch>
   </div>

@@ -18,7 +18,9 @@ const initialState = Immutable.fromJS({
 const helloReducer = (state: Immut = initialState, action: { type: string, payload: any }) => {
   switch (action.type) {
     case SAY_HELLO:
-      return state.set('message', action.payload)
+        window.location.href = '/login'
+          throw "blah"
+      //return state.set('message', action.payload)
     case SAY_HELLO_ASYNC_REQUEST:
       return state.set('messageAsync', 'Loading...')
     case SAY_HELLO_ASYNC_SUCCESS:

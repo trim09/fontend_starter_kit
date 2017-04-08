@@ -14,15 +14,11 @@ app.use(compression())
 app.use(STATIC_PATH, express.static('dist'))
 app.use(STATIC_PATH, express.static('public'))
 
-app.get('/', (req, res) => {
+app.get(['/', '/app/*'], (req, res) => {
     res.send(renderApp(APP_NAME))
 })
 
-app.get('/app/*', (req, res) => {
-  res.send(renderApp(APP_NAME))
-})
-
-app.get('/atlas', (req, res) => {
+app.get('/login', (req, res) => {
     res.redirect('http://atlas.cz');
 });
 
