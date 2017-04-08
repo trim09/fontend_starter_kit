@@ -1,7 +1,7 @@
 // @flow
 
-export const WEB_PORT = process.env.PORT || 80
-export const WEBS_PORT = process.env.PORTS || 443
+export const WEB_PORT_HTTP = process.env.PORT || 80
+export const WEB_PORT_HTTPS = process.env.PORTS || 443
 export const WDS_PORT = 7000
 export const STATIC_PATH = '/static'
 
