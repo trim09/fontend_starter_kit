@@ -8,12 +8,13 @@ import Nav from './component/nav'
 import HomePage from './component/page/home'
 import HelloPage from './component/page/hello'
 import HelloAsyncPage from './component/page/hello-async'
+import BootstrapPage from './component/page/hello-bootstrap'
 import NotFoundPage from './component/page/not-found'
 import {
   HOME_PAGE_ROUTE,
   HELLO_PAGE_ROUTE,
   HELLO_ASYNC_PAGE_ROUTE,
-  REDIR_PAGE_ROUTE,
+  HELLO_BOOTSTRAP,
 } from '../shared/routes'
 
 /*
@@ -32,6 +33,7 @@ const App = () =>
       <Route exact path={HOME_PAGE_ROUTE} render={() => <HomePage />} />
       <Route path={HELLO_PAGE_ROUTE} render={() => <HelloPage />} />
       <Route path={HELLO_ASYNC_PAGE_ROUTE} render={() => <HelloAsyncPage />} />
+      <Route path={HELLO_BOOTSTRAP} render={() => <BootstrapPage />} />
       <Route component={NotFoundPage} />
     </Switch>
   </div>

@@ -8,7 +8,7 @@ export const AJAX_PREFIX = '/ajax'
 export const HOME_PAGE_ROUTE = '/'
 export const HELLO_PAGE_ROUTE = PAGES_PREFIX + '/hello'
 export const HELLO_ASYNC_PAGE_ROUTE = PAGES_PREFIX + '/hello-async'
-export const REDIR_PAGE_ROUTE = PAGES_PREFIX + '/redir'
+export const HELLO_BOOTSTRAP = PAGES_PREFIX + '/hello-bootstrap'
 export const NOT_FOUND_DEMO_PAGE_ROUTE = PAGES_PREFIX + '/404'
 
 export const LOGIN_REDIRECT = '/login'

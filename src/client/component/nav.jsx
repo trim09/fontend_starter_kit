@@ -6,7 +6,7 @@ import {
     HOME_PAGE_ROUTE,
     HELLO_PAGE_ROUTE,
     HELLO_ASYNC_PAGE_ROUTE,
-    REDIR_PAGE_ROUTE,
+    HELLO_BOOTSTRAP,
     NOT_FOUND_DEMO_PAGE_ROUTE,
 } from '../../shared/routes'
 
@@ -18,7 +18,7 @@ const Nav = () =>
                 { route: HELLO_PAGE_ROUTE, label: 'Say Hello' },
                 { route: HELLO_ASYNC_PAGE_ROUTE, label: 'Say Hello Asynchronously' },
                 { route: NOT_FOUND_DEMO_PAGE_ROUTE, label: '404 Demo' },
-                { route: REDIR_PAGE_ROUTE, label: 'redir' },
+                { route: HELLO_BOOTSTRAP, label: 'bootstrap' },
             ].map(link => (
                 <li key={link.route}>
                     <NavLink to={link.route} activeStyle={{ color: 'limegreen' }} exact>{link.label}</NavLink>
