@@ -9,7 +9,12 @@ const renderApp = (title: string) =>
 <html>
   <head>
     <title>${title}</title>
-    <link rel="stylesheet" href="${STATIC_PATH}/css/style.css">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap-theme.min.css">
+   
+   <link rel="stylesheet" href="${STATIC_PATH}/css/style.css">
   </head>
   <body>
     <div class="${APP_CONTAINER_CLASS}"></div>
